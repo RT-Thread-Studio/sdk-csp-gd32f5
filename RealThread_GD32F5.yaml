@@ -1,0 +1,372 @@
+vendor: RealThread
+dvendor: GigaDevice
+name: GD32F5
+version: 2.0.0
+yaml_version: 1
+type: Chip_Support_Packages
+family_name: GD32
+series:
+  description: "GigaDevice's GD32F5 series of ARM Cortex-M33 MCUs with TrustZone and\
+    \ enhanced performance.\n\n  - Up to 120MHz CPU frequency\n  - ARM TrustZone-M\
+    \ security\n  - DSP instructions\n  - Enhanced connectivity\n  - Dual memory architecture\
+    \ (RAM + TCMRAM)"
+  series_name: GD32F5
+  peripheral: {}
+  sub_series:
+  - sub_series_name: GD32F527
+    cpu_info:
+      max_clock: '120000000'
+    chips:
+    - chip_name: GD32F527ZM
+      peripheral: {}
+      memory:
+      - id: IROM1
+        start: '0x8000000'
+        size: '0x400000'
+        default: '1'
+      - id: IRAM1
+        start: '0x20000000'
+        size: '0x100000'
+        init: '0'
+        default: '1'
+      - id: IRAM2
+        start: '0x10000000'
+        size: '0x10000'
+        init: '0'
+        default: '0'
+      compiler:
+        gcc:
+          entry_point: Reset_Handler
+          link_script: linkscripts/GD32F527ZM/link.ld
+          marco:
+          - GD32F527
+          files:
+          - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+          - libraries/CMSIS/GD/GD32F527/Source/GCC/startup_gd32f5xx.S
+        armcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+        iarcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+    - chip_name: GD32F527ZS
+      peripheral: {}
+      memory:
+      - id: IROM1
+        start: '0x8000000'
+        size: '0x780000'
+        default: '1'
+      - id: IRAM1
+        start: '0x20000000'
+        size: '0x80000'
+        init: '0'
+        default: '1'
+      - id: IRAM2
+        start: '0x10000000'
+        size: '0x10000'
+        init: '0'
+        default: '0'
+      compiler:
+        gcc:
+          entry_point: Reset_Handler
+          link_script: linkscripts/GD32F527ZS/link.ld
+          marco:
+          - GD32F527
+          files:
+          - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+          - libraries/CMSIS/GD/GD32F527/Source/GCC/startup_gd32f5xx.S
+        armcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+        iarcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+    - chip_name: GD32F527VM
+      peripheral: {}
+      memory:
+      - id: IROM1
+        start: '0x8000000'
+        size: '0x400000'
+        default: '1'
+      - id: IRAM1
+        start: '0x20000000'
+        size: '0x100000'
+        init: '0'
+        default: '1'
+      - id: IRAM2
+        start: '0x10000000'
+        size: '0x10000'
+        init: '0'
+        default: '0'
+      compiler:
+        gcc:
+          entry_point: Reset_Handler
+          link_script: linkscripts/GD32F527VM/link.ld
+          marco:
+          - GD32F527
+          files:
+          - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+          - libraries/CMSIS/GD/GD32F527/Source/GCC/startup_gd32f5xx.S
+        armcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+        iarcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+    - chip_name: GD32F527VS
+      peripheral: {}
+      memory:
+      - id: IROM1
+        start: '0x8000000'
+        size: '0x780000'
+        default: '1'
+      - id: IRAM1
+        start: '0x20000000'
+        size: '0x80000'
+        init: '0'
+        default: '1'
+      - id: IRAM2
+        start: '0x10000000'
+        size: '0x10000'
+        init: '0'
+        default: '0'
+      compiler:
+        gcc:
+          entry_point: Reset_Handler
+          link_script: linkscripts/GD32F527VS/link.ld
+          marco:
+          - GD32F527
+          files:
+          - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+          - libraries/CMSIS/GD/GD32F527/Source/GCC/startup_gd32f5xx.S
+        armcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+        iarcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+    - chip_name: GD32F527RM
+      peripheral: {}
+      memory:
+      - id: IROM1
+        start: '0x8000000'
+        size: '0x400000'
+        default: '1'
+      - id: IRAM1
+        start: '0x20000000'
+        size: '0x100000'
+        init: '0'
+        default: '1'
+      - id: IRAM2
+        start: '0x10000000'
+        size: '0x10000'
+        init: '0'
+        default: '0'
+      compiler:
+        gcc:
+          entry_point: Reset_Handler
+          link_script: linkscripts/GD32F527RM/link.ld
+          marco:
+          - GD32F527
+          files:
+          - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+          - libraries/CMSIS/GD/GD32F527/Source/GCC/startup_gd32f5xx.S
+        armcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+        iarcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+    - chip_name: GD32F527RS
+      peripheral: {}
+      memory:
+      - id: IROM1
+        start: '0x8000000'
+        size: '0x780000'
+        default: '1'
+      - id: IRAM1
+        start: '0x20000000'
+        size: '0x80000'
+        init: '0'
+        default: '1'
+      - id: IRAM2
+        start: '0x10000000'
+        size: '0x10000'
+        init: '0'
+        default: '0'
+      compiler:
+        gcc:
+          entry_point: Reset_Handler
+          link_script: linkscripts/GD32F527RS/link.ld
+          marco:
+          - GD32F527
+          files:
+          - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+          - libraries/CMSIS/GD/GD32F527/Source/GCC/startup_gd32f5xx.S
+        armcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+        iarcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+    - chip_name: GD32F527IM
+      peripheral: {}
+      memory:
+      - id: IROM1
+        start: '0x8000000'
+        size: '0x400000'
+        default: '1'
+      - id: IRAM1
+        start: '0x20000000'
+        size: '0x100000'
+        init: '0'
+        default: '1'
+      - id: IRAM2
+        start: '0x10000000'
+        size: '0x10000'
+        init: '0'
+        default: '0'
+      compiler:
+        gcc:
+          entry_point: Reset_Handler
+          link_script: linkscripts/GD32F527IM/link.ld
+          marco:
+          - GD32F527
+          files:
+          - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+          - libraries/CMSIS/GD/GD32F527/Source/GCC/startup_gd32f5xx.S
+        armcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+        iarcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+    - chip_name: GD32F527IS
+      peripheral: {}
+      memory:
+      - id: IROM1
+        start: '0x8000000'
+        size: '0x780000'
+        default: '1'
+      - id: IRAM1
+        start: '0x20000000'
+        size: '0x80000'
+        init: '0'
+        default: '1'
+      - id: IRAM2
+        start: '0x10000000'
+        size: '0x10000'
+        init: '0'
+        default: '0'
+      compiler:
+        gcc:
+          entry_point: Reset_Handler
+          link_script: linkscripts/GD32F527IS/link.ld
+          marco:
+          - GD32F527
+          files:
+          - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+          - libraries/CMSIS/GD/GD32F527/Source/GCC/startup_gd32f5xx.S
+        armcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+        iarcc:
+          entry_point: none
+          link_script: none
+          marco: []
+          files: []
+    ui:
+      uart:
+        default_value: UART0
+        prompt_message_en: select one uart as console output interface
+        prompt_message_zh: 选择一个串口作为控制台信息输出接口
+      tx_pin:
+        default_value: PA9
+        prompt_message_en: 'set the tx pin name of the console device interface, the
+          value should be with a format"P+[port name][pin number]",eg. PA2,PB6 '
+        prompt_message_zh: 设置控制台设备的数据发送引脚的名称, 名称应该具有以下格式"P+[端口名称][端口编号]", 比如：PA2,
+          PB6
+      rx_pin:
+        default_value: PA10
+        prompt_message_en: 'set the rx pin name of the console device interface, the
+          value should be with a format"P+[port name][pin number]", eg. PA3, PB7 '
+        prompt_message_zh: 设置控制台设备的数据发送引脚的名称，名称应该具有以下格式"P+[端口名称][端口编号]", 比如：PA2, PB6
+    docs:
+    - file: documents/GD32F527xx Datasheet_Rev1.6.pdf
+      title: Gd32F527Xx Datasheet Rev1.6
+    svd:
+      file: debug/svd/GD32F527.svd
+    project_type:
+      bare_metal:
+        function_map:
+          clk_init: none
+          sysTick: none
+        marco:
+        - SOC_FAMILY_GD32
+        - SOC_SERIES_GD32F5xx
+        source_files:
+        - drivers/baremetal
+      rtt_nano:
+        function_map:
+          clk_init: none
+          heap_init: none
+        marco:
+        - SOC_FAMILY_GD32
+        - SOC_SERIES_GD32F5xx
+        source_files:
+        - drivers/nano
+      rtt:
+        function_map:
+          rt_hw_board_init: none
+          heap_init: none
+        marco:
+        - SOC_FAMILY_GD32
+        - SOC_SERIES_GD32F5xx
+        source_files:
+        - drivers/rtt
+    source_files:
+      file:
+      - libraries/GD32F527_standard_peripheral
+      - libraries/CMSIS/GD/GD32F527/Include/system_gd32f527.h
+      - libraries/CMSIS/GD/GD32F527/Include/gd32f527.h
+      - libraries/CMSIS/GD/GD32F527/Source/system_gd32f527.c
+      - libraries/CMSIS/GD/GD32F527/Include/gd32f527_libopt.h
+      - libraries/CMSIS/core_cm33.h
+      - libraries/CMSIS/cmsis_compiler.h
+      - libraries/CMSIS/cmsis_version.h
+      - libraries/CMSIS/cmsis_gcc.h
+  cpu_info:
+    core: Cortex-M33
+    fpu: '1'
+    mpu: '1'
+    endian: Little-endian
